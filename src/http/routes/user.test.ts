@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import request from 'supertest';
 import { appFactory } from '../app';
 import { UsersService } from '../../domain/users/usersService';

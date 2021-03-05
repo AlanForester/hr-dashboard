@@ -1,6 +1,6 @@
 /**
  * This is the app Model it is decoupled from
- * the Entities used for the databse
+ * the Entities used for the database
  */
 export interface User {
   id: string;

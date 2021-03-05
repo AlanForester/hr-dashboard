@@ -4,7 +4,7 @@ import { UsersService } from '../../domain/users/usersService';
 
 const router = express.Router();
 
-export function userRoute(userService: UsersService) {
+export const userRoute = (userService: UsersService): any => {
   router.get(
     '/',
     asyncWrapper(async (_: Request, res: Response) => {
@@ -24,4 +24,4 @@ export function userRoute(userService: UsersService) {
   );
 
   return router;
-}
+};
