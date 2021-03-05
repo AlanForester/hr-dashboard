@@ -27,9 +27,7 @@ describe('user route test', () => {
     it('should return 200 an array of users', async () => {
       mockUserRepository.getAll.mockResolvedValue(userData);
 
-      const { body: users } = await request(app)
-        .get('/users')
-        .expect(200);
+      const { body: users } = await request(app).get('/users').expect(200);
 
       expect(users).toEqual(userData);
     });
@@ -40,7 +38,7 @@ describe('user route test', () => {
       return request(app)
         .get('/users')
         .expect(500)
-        .catch(error => {
+        .catch((error) => {
           expect(error).toEqual(dbError);
         });
     });

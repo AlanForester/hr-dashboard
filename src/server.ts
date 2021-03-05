@@ -6,7 +6,6 @@ import { UsersService } from './domain/users/usersService';
 import { init } from './signals';
 import { Database } from './data/database';
 
-
 // import { Server } from 'ws';
 //
 // const wss = new Server({ port: 8080 });

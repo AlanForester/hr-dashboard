@@ -12,6 +12,7 @@
   },
   "plugins": ["@typescript-eslint", "jest"],
   "extends": [
+    "airbnb-base",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",

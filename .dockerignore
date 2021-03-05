@@ -30,5 +30,10 @@ Dockerfile
 # Linter config
 .eslintrc
 
+/coverage
+/dist
+/build
+.idea
+
 # Editor config
 vscode/
